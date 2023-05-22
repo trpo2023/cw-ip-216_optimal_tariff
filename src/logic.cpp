@@ -60,7 +60,20 @@ public:
     {
         return ans3;
     }
-
+    
+    void internet_get_ans(radio button, radio button1, radio button2)
+    {
+    
+    }
+    void mobile_get_ans(radio button, radio button1, radio button2)
+    {
+    
+    }
+    
+    void tv_get_ans(radio button, radio button1, radio button2)
+    {
+    	
+    }
     void parcer(std::string value)
     {
         long unsigned i = 0;
