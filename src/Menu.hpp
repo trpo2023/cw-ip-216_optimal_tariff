@@ -12,4 +12,25 @@ void dev(
         Texture& BackgroundDevelopersTexture,
         Texture& ButtonExitTexture,
         Texture& ButtonBackTexture);
+void inter(
+        RenderWindow& window,
+        Texture& BackgroundInternetTexture,
+        Texture& ButtonBackTexture,
+        Texture& ButtonCountTexture,
+        Texture& BackgroundTexture,
+        Texture& ButtonExitTexture);
+void mob(
+        RenderWindow& window,
+        Texture& BackgroundMobileTexture,
+        Texture& ButtonBackTexture,
+        Texture& ButtonCountTexture,
+        Texture& BackgroundTexture,
+        Texture& ButtonExitTexture);
+void telev(
+        RenderWindow& window,
+        Texture& BackgroundTvTexture,
+        Texture& ButtonBackTexture,
+        Texture& ButtonCountTexture,
+        Texture& BackgroundTexture,
+        Texture& ButtonExitTexture);
 #endif
