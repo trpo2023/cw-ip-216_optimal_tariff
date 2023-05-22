@@ -1,5 +1,5 @@
 #include "Menu.hpp"
-//Test
+
 int isMenu = 0;
 
 void menu(RenderWindow& window)
@@ -65,7 +65,6 @@ void menu(RenderWindow& window)
         }
 
         if (Mouse::isButtonPressed(Mouse::Left)) {
-             
             if (menuNum == 4) {
                 isMenu = 1;
                 dev(window,
@@ -106,7 +105,8 @@ void dev(
     text1.setFont(font);
     text1.setPosition(190.f, 220.f);
     text1.setString(
-            "Fedor Sobolev: Developer of program logic\n\nIvan Pinevich: Graphic developer and test coverage developer");
+            "Fedor Sobolev: Developer of program logic\n\nIvan Pinevich: "
+            "Graphic developer and test coverage developer");
     Sprite background(BackgroundDevelopersTexture), Exit(ButtonExitTexture),
             Back(ButtonBackTexture);
     int menuNum = 0;
