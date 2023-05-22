@@ -5,6 +5,7 @@ on:
     branches: 
       - menu
       - main
+      - logic
 
 jobs:
   build:
