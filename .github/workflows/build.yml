@@ -2,7 +2,9 @@ name: Build
 
 on: 
   push:
-    branches: menu
+    branches: 
+      - menu
+      - main
 
 jobs:
   build:
