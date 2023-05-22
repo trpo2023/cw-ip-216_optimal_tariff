@@ -4,13 +4,62 @@
 
 class GiveRes {
 private:
-
-
+	int ans1, ans2, ans4;
+    	std::string ans3;
+    	std::string name;
+    	std::vector<std::string> tariffs;
+    	std::string Shapka;
 public:
     GiveRes()
     {
     }
-  
+    
+    void nameSet(std::string Value)
+    {
+        name = Value;
+    }
+
+    std::string nameGet()
+    {
+        return name;
+    }
+
+    void ans1Set(int Value)
+    {
+        ans1 = Value;
+    }
+
+    int ans1Get()
+    {
+        return ans1;
+    }
+    void ans2Set(int Value)
+    {
+        ans2 = Value;
+    }
+
+    int ans2Get()
+    {
+        return ans2;
+    }
+    void ans4Set(int Value)
+    {
+        ans4 = Value;
+    }
+
+    int ans4Get()
+    {
+        return ans4;
+    }
+    void ans3Set(std::string Value)
+    {
+        ans3 = Value;
+    }
+
+    std::string ans3Get()
+    {
+        return ans3;
+    }
 
     void parcer(std::string value)
     {
