@@ -10,11 +10,11 @@ void menu(RenderWindow& window)
             BackgroundMobileTexture, BackgroundTvTexture,
             BackgroundDevelopersTexture;
 
-    BackgroundTexture.loadFromFile("image/Fon.jpg");
-    BackgroundInternetTexture.loadFromFile("image/FonInternet.jpg");
-    BackgroundMobileTexture.loadFromFile("image/FonMobile.jpg");
-    BackgroundTvTexture.loadFromFile("image/FonTV.jpg");
-    BackgroundDevelopersTexture.loadFromFile("image/FonDevelopers.jpg");
+    BackgroundTexture.loadFromFile("image/Fon.png");
+    BackgroundInternetTexture.loadFromFile("image/FonInternet.png");
+    BackgroundMobileTexture.loadFromFile("image/FonMobile.png");
+    BackgroundTvTexture.loadFromFile("image/FonTV.png");
+    BackgroundDevelopersTexture.loadFromFile("image/FonDevelopers.png");
     ButtonInternetTexture.loadFromFile("image/Internetknopka.png");
     ButtonMobileTexture.loadFromFile("image/Mobileknopka.png");
     ButtonTvTexture.loadFromFile("image/TVknopka.png");
@@ -106,7 +106,7 @@ void dev(
     text1.setPosition(190.f, 220.f);
     text1.setString(
             "Fedor Sobolev: Developer of program logic\n\nIvan Pinevich: "
-            "Graphic developer and test coverage developer");
+            "Graphic developer and \n\ntest coverage developer");
     Sprite background(BackgroundDevelopersTexture), Exit(ButtonExitTexture),
             Back(ButtonBackTexture);
     int menuNum = 0;
