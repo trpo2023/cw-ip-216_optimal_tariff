@@ -91,5 +91,30 @@ TEST(draw, CorrectPoint3)
     button.menuNumSet(0);
 }
 
+TEST(draw, UncorrectPoint1)
+{
+    points.x = 39;
+    points.y = 180;
+    Mouse::setPosition(points, window);
+    ASSERT_NE(1, button.draw(40, 180, 280, 380, window, true));
+    button.menuNumSet(0);
 
+    points.x = 88;
+    points.y = 180;
+    Mouse::setPosition(points, window);
+    ASSERT_NE(1, button.draw(40, 180, 280, 380, window, true));
+    button.menuNumSet(0);
+
+    points.x = 40;
+    points.y = 228;
+    Mouse::setPosition(points, window);
+    ASSERT_NE(1, button.draw(40, 180, 280, 380, window, true));
+    button.menuNumSet(0);
+
+    points.x = 88;
+    points.y = 228;
+    Mouse::setPosition(points, window);
+    ASSERT_NE(1, button.draw(40, 180, 280, 380, window, true));
+    button.menuNumSet(0);
+}
 }
