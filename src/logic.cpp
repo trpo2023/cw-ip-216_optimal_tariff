@@ -4,16 +4,33 @@
 
 class GiveRes {
 private:
-	int ans1, ans2, ans4;
-    	std::string ans3;
-    	std::string name;
-    	std::vector<std::string> tariffs;
-    	std::string Shapka;
+    int ans1, ans2, ans4;
+    std::string ans3;
+    std::string name;
+    std::vector<std::string> tariffs;
+    std::string Shapka;
+
 public:
     GiveRes()
     {
     }
-    
+
+    GiveRes(std::string str, int a, int b, std::string c)
+    {
+        nameSet(str);
+        ans1Set(a);
+        ans2Set(b);
+        ans3Set(c);
+    }
+
+    GiveRes(std::string str, int a, int b, int c)
+    {
+        nameSet(str);
+        ans1Set(a);
+        ans2Set(b);
+        ans3Set(std::to_string(c));
+    }
+
     void nameSet(std::string Value)
     {
         name = Value;
@@ -60,10 +77,10 @@ public:
     {
         return ans3;
     }
-    
+
     void internet_get_ans(radio button, radio button1, radio button2)
     {
-    	Shapka = " NAME           COST(RUB)      SPEED          TV  \n";
+        Shapka = " NAME           COST(RUB)      SPEED          TV  \n";
         std::fstream answer1("thirdparty/txt/inet.txt", std::ios::in);
         for (int i = 0; i < 20; i++) {
             std::string temp;
@@ -129,7 +146,7 @@ public:
     }
     void mobile_get_ans(radio button, radio button1, radio button2)
     {
-    	Shapka = "NAME            COST(RUB)    INTERNET(GB)  PHONECALLS(min) "
+        Shapka = "NAME            COST(RUB)    INTERNET(GB)  PHONECALLS(min) "
                  "\n";
         std::fstream answer2("thirdparty/txt/mobile.txt", std::ios::in);
         for (int i = 0; i < 20; i++) {
@@ -193,10 +210,10 @@ public:
 
         answer2.close();
     }
-    
+
     void tv_get_ans(radio button, radio button1, radio button2)
     {
-    	Shapka = " NAME           COST(RUB)     CHANNELS    HD CHANNELS \n";
+        Shapka = " NAME           COST(RUB)     CHANNELS    HD CHANNELS \n";
         std::fstream answer3("thirdparty/txt/tv.txt", std::ios::in);
         for (int i = 0; i < 20; i++) {
             std::string temp;
@@ -259,7 +276,7 @@ public:
 
         answer3.close();
     }
-    
+
     void parcer(std::string value)
     {
         long unsigned i = 0;
@@ -298,7 +315,7 @@ public:
         ans3 = time;
         ans4 = strtol(time.c_str(), &pEnd, 10);
     }
-    
+
     std::string output_str()
     {
         long unsigned i;
@@ -328,5 +345,4 @@ public:
 
         return temp;
     }
-    
 };
