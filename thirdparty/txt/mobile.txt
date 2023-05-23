@@ -16,4 +16,3 @@ MyCall           200         10                 200
 Nolimit          450         9999               800         
 Closepeople      650	      28                 450   
 MyTele2          599         24                 300
-

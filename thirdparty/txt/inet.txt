@@ -12,4 +12,3 @@ Streaming      999  500  NO
 Family         750  300  YES  
 MTC            650  100  YES  
 MTC(NO_TV)     400  100  NO 
-
