@@ -31,6 +31,18 @@ public:
         ans3Set(std::to_string(c));
     }
 
+    std::string Showtariffs()
+    {
+        std::string End = Shapka + "\n";
+        if (tariffs.empty()) {
+            return "Tariffs not found \n";
+        }
+        for (unsigned int i = 0; i < tariffs.size(); i++) {
+            End += tariffs[i] + "\n";
+        }
+        return End;
+    }
+
     void nameSet(std::string Value)
     {
         name = Value;
