@@ -1,6 +1,6 @@
 #ifndef H_MENU
 #define H_MENU
-
+#include "logic.cpp"
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
@@ -33,4 +33,10 @@ void telev(
         Texture& ButtonCountTexture,
         Texture& BackgroundTexture,
         Texture& ButtonExitTexture);
+void result(
+        RenderWindow& window,
+        Texture& BackgroundTexture,
+        Texture& ButtonExitTexture,
+        Texture& ButtonBackTexture,
+        GiveRes cnt);
 #endif
